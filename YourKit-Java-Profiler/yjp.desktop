@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=YourKit Java Profiler
+Categories=;
+Comment=YourKit Java Profiler
+Exec=/opt/2015-build-15070/bin/yjp.sh
+Icon=/opt/2015-build-15070/bin/yjp.ico
+Hidden=false
+Txerminal=false
+Type=Application

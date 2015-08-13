@@ -8,3 +8,7 @@ build:
 install:
 	sudo dnf install ./yjp-*.rpm
 	sudo install -t /usr/share/applications yjp.desktop
+
+uninstall:
+	sudo dnf erase yjp
+	sudo rm /usr/share/applications/yjp.desktop

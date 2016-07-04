@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+
+
 mat_version=$(curl -s -o - "https://eclipse.org/mat/downloads.php" | grep '<b>Version</b>:' | awk '{print $2}')
-dl_url="https://www.eclipse.org/downloads/download.php?file=/mat/1.5/rcp/MemoryAnalyzer-${mat_version}-linux.gtk.x86_64.zip&r=1"
+mat_major_version=$(echo ${mat_version} | cut -f1,2 -d.)
+dl_url="https://www.eclipse.org/downloads/download.php?file=/mat/${mat_major_version}/rcp/MemoryAnalyzer-${mat_version}-linux.gtk.x86_64.zip&r=1"
 dl_file=$(mktemp)
 
 if [[ -e "eclipse-mat-${mat_version}-1.x86_64.rpm" ]]; then

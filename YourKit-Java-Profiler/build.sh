@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-yjp_version=$(curl -s -o - https://www.yourkit.com/download/ | grep '<h3 id="download">' | sed -e 's/<[^>]\+>//g' -e 's/,//' | cut -f4-6 -d" " --output-delimiter="-" | tr -d '[:space:]')
+yjp_version=$(curl -s -o - https://www.yourkit.com/download/ | grep '<h3 id="download">' | sed -e 's/<[^>]\+>//g' -e 's/,//' | cut -f4-6 -d" " --output-delimiter="-" | tr -d '[:space:]' | sed -e 's/build-/b/')
 echo "Latest version is ${yjp_version}"
 
 dl_url="https://www.yourkit.com/download/yjp-${yjp_version}-linux.tar.bz2"

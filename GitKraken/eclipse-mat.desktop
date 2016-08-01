@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Eclipse MAT
+Categories=;
+Comment=Eclipse Memory Analyzer Tool
+Exec=/opt/mat/MemoryAnalyzer
+Icon=eclipse-mat
+Hidden=false
+Txerminal=false
+Type=Application
